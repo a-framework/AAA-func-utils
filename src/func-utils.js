@@ -1,7 +1,5 @@
-class F {
-
-};
+import {Service} from './service';
 
 export default {
-    F: F
+    Service
 };

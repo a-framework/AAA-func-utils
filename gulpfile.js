@@ -60,7 +60,7 @@ gulp.task('clean', function (cb) {
     rimraf(TARGET_FOLDER, cb);
 });
 
-gulp.task('server', ['clean', 'build:watch'], function() {
+gulp.task('server', function() {
     browserSync({
         port: port,
         browser: [],
@@ -78,3 +78,4 @@ gulp.task('server', ['clean', 'build:watch'], function() {
     });
 });
 
+gulp.task('default', ['clean', 'build:watch', 'server']);
